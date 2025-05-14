@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio website</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a8063bbfd1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            
+            <ul id="sidemenu">
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+                
+
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#Portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+               
+                
+
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer/Power Platform Developer</p>
+            <h1> Hi, I'm <span>Rithesh</span><br>Raja From Charlotte, NC, USA</h1>
+        </div>
+    </div>
+</div>
+<!-------------------------------about-------------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> A proficient Data Engineer and Power Platform Developer focusing on leveraging robust development and management capabilities to enhance organizational performance and scalability. Demonstrated success through an internship at the Illinois State Department of Central Management Services, successfully deploying live applications with strong analytical thinking, problem-solving, and effective communication skills.
+<br>Experienced as a Google Cloud Platform and AWS Data Engineer, with project experience utilizing tools such as Apache Spark, Hadoop, Google Cloud, Apache Airflow, and Big Query, Devops including deploying ETL data pipelines at Infinite Computer Solutions, as a full-time employee for 2+ years. Actively pursuing opportunities to contribute to tech-driven environments that foster continuous improvement and digital advancement.
+</p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+                    <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+                    <p class="tab-links" onclick="opentab('education')"> Education </p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python, JavaScript, Cascading Style Sheets CSS, HTML, SQL, PySpark</span><br>Languages</li>
+                        <li><span>SQL, MySQL, Big Query, MongoDB</span><br>Database Languages</li>
+                        <li><span>PowerApps, Microsoft SharePoint, Power BI, Power Automate, Apache Airflow, GCP, Google Big Query, Apache Spark, Hadoop, Git, GitHub, AWS, DeveOps, CI/CD</span><br>Tools</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Infinite Computer Solutions (July 2021- July 2023) 2 Years</span><br><b>Data Engineer/Data Analyst</b> 
+                <br>• Designed and implemented scalable data architectures on Google Cloud Platform, including BigQuery, Cloud Storage, Cloud Pub/Sub, and Dataflow, to process and analyze large datasets efficiently.
+<br>• Developed ETL pipelines using Cloud Data Fusion and Apache Beam to extract, transform, and load data from various sources into BigQuery for real-time analytics and reporting.
+<br>• Optimized and managed BigQuery data models, ensuring performance tuning, efficient query execution, and cost optimization.
+<br>• Collaborated with data scientists, business analysts, and cross-functional teams to define data pipelines and help with data integration for machine learning models and business intelligence reporting.
+<br>• Built and maintained robust data models and data warehousing solutions on Google Cloud Storage and BigQuery, ensuring compliance with security and governance standards.
+<br>• Automated data workflows using Cloud Composer (Airflow) for scheduled and event-driven data pipeline execution.
+<br>• Developed and maintained NoSQL databases using AWS DynamoDB and AWS Redshift to handle large-scale data processing. 
+<br>• Built and managed real-time data streaming pipelines using Confluent Kafka, enabling efficient event-driven architectures. 
+<br>• Automated data workflows and ETL processes using Python, improving data processing efficiency. 
+<br>• Leveraged Terraform to automate cloud infrastructure provisioning, ensuring scalability and consistency. 
+<br>• Managed GitHub repositories, enforced PR approval workflows, and implemented CI/CD pipelines for seamless deployment. 
+<br>• Applied DevOps best practices, focusing on automation, cloud security principles, and infrastructure management to optimize system reliability and compliance.
+<br>• Implemented data security and access control mechanisms, leveraging Identity and Access Management (IAM) policies to ensure compliance with data privacy regulations.
+<br>• Created dashboards and reporting tools in Google Data Studio and Looker to visualize key metrics and provide insights to stakeholders.
+<br>• Monitored pipeline performance using Cloud Monitoring and Cloud Logging, ensuring high availability and minimizing downtime.
+<br>• Led data migration projects, transitioning on-premises data systems to GCP while ensuring minimal disruption and maintaining system integrity.
+<br>• Collaborated with DevOps teams to integrate data pipelines into CI/CD workflows for continuous deployment and integration.
+<br>• Provided ongoing support and troubleshooting for data pipelines, ensuring efficient data flow and resolving issues with performance, scalability, or data quality.
+
+
+                        <li><span>Illinois Department of Central Management Services(Summer Internship) (June 2024- August 2024)</span><br><b>Power Platform Developer</b>
+<br>• Worked closely with the development team to understand project requirements and developed an
+effective user-friendly app.
+<br>• Developed security-based applications using Microsoft Power Platform tools and JavaScript language.
+<br>• Created, customized, and deployed Power Apps applications to meet specific business needs, including developing forms, workflows, and interfaces.
+<br>• Designed and implemented automated workflows using Power Automate to streamline repetitive tasks and improve operational efficiency.
+<br>• Utilized Power BI to develop and maintain interactive dashboards and reports that provide actionable insights and support data-driven decision-making.
+<br>• Integrated Power Platform solutions with various data sources and services, ensuring seamless data flow and connectivity across different systems.
+<br>• Test applications and workflows to identify and resolve issues, ensure meeting functionality, reliability, and performance standards, and report the results.
+<br>• Prepared and maintained comprehensive documentation for applications, workflows, and processes to facilitate future updates and user training.
+
+                    
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Univeristy of Illinois At Springfield, Illinois (Graduating May 2025) </span><br>Masters in Computer Science</li>
+                        <li><span>Reva University, India (Graduated)</span><br>Bachelors of Computer Applications</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------certifications----------------->
+<div id="certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="certifications-list">
+            <div>
+                <br>
+                
+                <i class="fa-solid fa-microchip"></i>
+                <br>
+                <br>
+                <h2>Microsoft Certification</h2>Introduction to python programming certification</p>
+                <a href="https://drive.google.com/file/d/1j-SUkkK1w_u2l8Rwfs6o-ML7-HevYcqp/view?usp=sharing">CLICK HERE TO VIEW</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-google"></i>
+                <h2>Google Cloud Data Engineer</h2>
+                <p> (Professional Cloud Data Engineer) certification is to deploy Data Pipeline inside GCP cloud.</p>
+                <a href="#">CLICK HERE TO VIEW</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>              <i class="fa-brands fa-microsoft"></i>
+                <h2>PL 400 Microsoft Power platform Developer</h2>
+                <p>Power Platform (PowerApps, Power Automate, and SharePoint)</p>
+                <a href="https://www.udemy.com/certificate/UC-e3bfd5ad-61a2-4fba-ae10-7a718c61a81e/">CLICK HERE TO VIEW</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-------------------------portfolio------------------>
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/brain22.jpeg">
+                <div class="layer">
+                    <h3>Disease Detection Software</h3>
+                    <p> Python Software to detect the type of disease in pomegranates using image processing and neural network Technology</p>
+                    <a href="https://github.com/ritheshr/Disease-detection-in-pomegranate-using-Neural-networks/blob/5eabc1c152beb760d3f477954dc6d6cf397faeeb/pomegranate%20disease%20detection.ipynb"><i class="fa-solid fa-link" style="color: #151414;"></i></a>
+
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/irctc.webp">
+                <div class="layer">
+                    <h3> IRCTC Data PipeLine Project </h3>
+                <p>This project implements a real-time data pipeline for IRCTC (Indian Railway Catering and Tourism Corporation) railway data using Google Cloud Platform (GCP) services. The pipeline ingests, processes, and visualizes railway booking data using Pub/Sub, DataFlow, and BigQuery</p>
+                    <a href="https://github.com/ritheshr/Irctc_Realtime_DataPipeline_DataEngineering_Project/blob/main/README.md"><i class="fa-solid fa-link" style="color: #151414;"></i></a>
+
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/salabade2.webp">
+                <div class="layer">
+                    <h3> Credit Card Transactions Predictive Analytics Pipeline on GCP </h3>
+                <p>This project builds a Predictive Analytics Pipeline for Credit Card Transactions on Google Cloud Platform (GCP). The system detects fraudulent transactions, performs churn prediction, and enables anomaly detection alerts using BigQuery ML, Cloud Dataflow, Cloud Functions, Cloud Run, and Looker Studio</p>
+                    <a href="https://github.com/ritheshr/creditcardpipeline"><i class="fa-solid fa-link" style="color: #151414;"></i></a>
+
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/weather.webp">
+                <div class="layer">
+                    <h3> Weather Application </h3>
+            <p>Advanced Weather Report Application This is a Weather Report Application that provides real-time weather information, including a 5-day forecast. It allows users to search for weather by city name or fetch the weather based on their current geolocation.
+                    </p>
+                    <a href="https://github.com/ritheshr/Advanced-Weather-Application/blob/main/README.md"><i class="fa-solid fa-link" style="color: #151414;"></i></a>
+
+                </div>
+
+            </div>
+             <div class="work">
+                <img src="images/money21.jpeg">
+                <div class="layer">
+                    <h3> Employee Salary data analysis </h3>
+                <p>This project involves analyzing and visualizing a dataset of employee salary records to identify trends, correlations, and insights across multiple salary components like base pay, overtime, and longevity bonuses. The analysis was performed using Python with a strong focus on data cleaning, statistical analysis, and meaningful visualizations.</p>
+                    <a href="https://github.com/ritheshr/Employee-Data-Analysis-2023"><i class="fa-solid fa-link" style="color: #151414;"></i></a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-------------------------------contact------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> Ritheshraj321@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1-2177617326</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rithesh-raja-14a65a167/"> <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/rithesh.raj_/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.threads.net/@rithesh.raj_?invite=0"> <i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://github.com/ritheshr"> <i class="fa-brands fa-github"></i></a>
+                </div>
+                <br>
+
+                <a href="images/RITHESH RAJA 3.docx" download class="download-btn">Download Resume</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="submit-btn"> Submit </button>
+                </form>
+
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights  <i class="fa-solid fa-copyright" style="color: #e4ecec;"></i> Rithesh Raj for portfolio website  <i class="fa-solid fa-briefcase"></i></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    
+    }
+    
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDjtLVqggCkmQw4GFb37rGC33TsLVIFIdUyzfg3KB-mzeTSb4s7RvtpWkWPW_mPKdd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Response sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+
+            },5000)
+            form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    </body>
+</html>
